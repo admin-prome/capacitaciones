@@ -101,6 +101,10 @@
                     success: function(data) {
                         if (data == "dni verified") {
                             $("#alert").html("<div style='display: block;' class='alert alert-success m0' role='alert'><i class='fa-regular fa-circle-check'></i>ㅤDNI verificado</div>");
+                            
+                            setTimeout(function() {
+                                window.location.href = "redirection.php";
+                            }, 2000);
                         } else {
                             $("#alert").html("<div style='display: block;' class='alert alert-danger m0' role='alert'><i class='fa-regular fa-circle-xmark'></i>ㅤEl DNI ingresado no se encontró en nuestos registros</div>");
                             $("#btnLogin").prop("disabled", false);
