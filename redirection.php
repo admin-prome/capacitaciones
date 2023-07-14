@@ -39,7 +39,7 @@
                             <div class="row" style="margin-top: 30px">
                                 <div class="col-md-12" style="text-align: center; padding: 0px 30px">
                                     <div>
-                                        <img src="../img/confirmacion.png" style="height: 140px" />
+                                        <img src="img/confirmacion.png" style="height: 140px" />
                                     </div>
                                 </div>
                             </div>
