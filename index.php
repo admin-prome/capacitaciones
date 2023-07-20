@@ -54,7 +54,7 @@
                     <div class="card bg-light" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
                             <div class="mt-md-4">
-                                <h2 class="mb-5 text-uppercase prome-green-title">Capacitaciones</h2>
+                                <h2 class="mb-5 text-uppercase prome-green-title">CURSOS</h2>
                                 <p class="mb-5">Para acceder al campus de capacitaciones tenemos que verificar tu DNI</p>
                                 <div class="form-outline mb-4">
                                     <input type="text" class="form-control form-control-lg" placeholder="Ingresá tu DNI" name="dni" id="dni" required="required" autocomplete="off" maxlength="11" onkeypress="return validateDNI(event);" onblur="cleanDNIInput();">

@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-md-10 offset-1">
                         <h1 style="color: #23952E; text-align: center; font-weight: 600">
-                            Capacitaciones
+                            CURSOS
                         </h1>
                     </div>
                 </div>
