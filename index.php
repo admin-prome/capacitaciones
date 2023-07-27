@@ -40,6 +40,15 @@
             display: none;
         }
 
+        .alert-small {
+            font-size: 14px;
+            padding: 6px 12px;
+        }
+
+        .alert-small i {
+            margin-right: 5px;
+        }
+
         .m0 {
             margin: 0;
         }
@@ -52,14 +61,14 @@
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                     <div class="card bg-light" style="border-radius: 1rem;">
-                        <div class="card-body p-5 text-center">
+                        <div class="card-body p-4 text-center">
                             <div class="mt-md-4">
-                                <h2 class="mb-5 text-uppercase prome-green-title">CURSOS</h2>
-                                <p class="mb-5">Para acceder al campus de capacitaciones tenemos que verificar tu DNI</p>
+                                <h2 class="mb-4 text-uppercase prome-green-title">CURSOS</h2>
+                                <p class="mb-4">Para acceder a los cursos tenemos que verificar tu DNI</p>
                                 <div class="form-outline mb-4">
                                     <input type="text" class="form-control form-control-lg" placeholder="Ingresá tu DNI" name="dni" id="dni" required="required" autocomplete="off" maxlength="11" onkeypress="return validateDNI(event);" onblur="cleanDNIInput();">
                                 </div>
-                                <button type="submit" id="btnLogin" class="btn btn-lg btn-success px-5 mt-4 btn-prome-green">
+                                <button type="submit" id="btnLogin" class="btn btn-success px-5 mt-2 btn-prome-green">
                                     Verificar
                                 </button>
                                 <div class="mt-4 hidden m0" id="alert">ㅤ</div>
@@ -84,12 +93,12 @@
                 $("#btnLogin").prop("disabled", true);
 
                 if (dni == "") {
-                    $("#alert").html("<div class='alert alert-danger m0' role='alert'><i class='fa-regular fa-circle-xmark'></i>ㅤNo se ingresó un DNI</div> ");
+                    $("#alert").html("<div class='alert alert-danger alert-small m0' role='alert'><i class='fa-regular fa-circle-xmark'></i>No se ingresó un DNI</div> ");
                     $("#btnLogin").prop("disabled", false);
                     return false;
                 }
 
-                $("#alert").html("<div class='alert alert-info m0' role='alert'><i class='fa-regular fa-clock'></i>ㅤVerificando...</div> ");
+                $("#alert").html("<div class='alert alert-info alert-small m0' role='alert'><i class='fa-regular fa-clock'></i>Verificando...</div> ");
 
                 $.ajax({
                     url: "dni-verification.php",
@@ -100,13 +109,13 @@
                     },
                     success: function(data) {
                         if (data == "dni verified") {
-                            $("#alert").html("<div style='display: block;' class='alert alert-success m0' role='alert'><i class='fa-regular fa-circle-check'></i>ㅤDNI verificado</div>");
-                            
+                            $("#alert").html("<div style='display: block;' class='alert alert-success alert-small m0' role='alert'><i class='fa-regular fa-circle-check'></i>DNI verificado</div>");
+
                             setTimeout(function() {
                                 window.location.href = "redirection.php";
                             }, 2000);
                         } else {
-                            $("#alert").html("<div style='display: block;' class='alert alert-danger m0' role='alert'><i class='fa-regular fa-circle-xmark'></i>ㅤEl DNI ingresado no se encontró en nuestos registros</div>");
+                            $("#alert").html("<div style='display: block;' class='alert alert-danger alert-small m0' role='alert'><i class='fa-regular fa-circle-xmark'></i>El DNI ingresado no se encontró en nuestos registros</div>");
                             $("#btnLogin").prop("disabled", false);
                         }
                     }

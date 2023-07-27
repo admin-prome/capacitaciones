@@ -15,14 +15,15 @@
 
     <script type="text/javascript">
         setTimeout(function() {
-            window.location.href = "https://www.capacitacionesprome.com.ar/";
+            window.open("https://www.capacitacionesprome.com.ar/", "_blank");
         }, 2000);
     </script>
+
 </head>
 
 <body style="background-color: #F3F3F3">
     <div>
-        <div class="container" style="background-color: #F3F3F3; opacity: 0.9; padding: 20px; padding-bottom: 50px; padding-top: 30px">
+        <div class="container" style="background-color: #F3F3F3; opacity: 0.9; padding: 20px; padding-bottom: 40px; padding-top: 30px">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 offset-1">
@@ -31,7 +32,7 @@
                         </h1>
                     </div>
                 </div>
-                <div class="row" style="margin-top: 40px">
+                <div class="row" style="margin-top: 20px">
                     <div class="col-md-4">
                     </div>
                     <div class="col-md-4">
@@ -39,7 +40,7 @@
                             <div class="row" style="margin-top: 30px">
                                 <div class="col-md-12" style="text-align: center; padding: 0px 30px">
                                     <div>
-                                        <img src="img/confirmacion.png" style="height: 140px" />
+                                        <img src="img/confirmacion.png" style="height: 110px" />
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +50,7 @@
                                         Redireccionando…
                                     </p>
                                     <p style="color: #4E4E4E; text-align: center;">
-                                        Si no podés acceder a la plataforma de aprendizaje, hacé click <a href='https://www.capacitacionesprome.com.ar/'>acá</a>.
+                                        Si no podés acceder a los cursos, hacé click <a href='https://www.capacitacionesprome.com.ar/'>acá</a>.
                                     </p>
 
                                 </div>
