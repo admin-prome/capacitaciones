@@ -15,44 +15,38 @@
 
     <script type="text/javascript">
         setTimeout(function() {
-            window.open("https://www.capacitacionesprome.com.ar/", "_blank");
+            window.parent.open("https://www.capacitacionesprome.com.ar/", "_blank");
         }, 2000);
     </script>
 
+
 </head>
 
-<body style="background-color: #F3F3F3">
+<body style="background-color: #F3F3F3; border-radius: 20px;">
     <div>
-        <div class="container" style="background-color: #F3F3F3; opacity: 0.9; padding: 20px; padding-bottom: 40px; padding-top: 30px">
+        <div class="container" style="background-color: #F3F3F3; opacity: 0.9; padding: 20px; padding-bottom: 40px; padding-top: 30px;">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-10 offset-1">
-                        <h1 style="color: #23952E; text-align: center; font-weight: 600">
+                <div class="row justify-content-center" style="margin-top: 20px;">
+                    <div class="col-md-6">
+                        <h1 style="color: #23952E; text-align: center; font-weight: 600; margin-bottom: 1rem;">
                             CURSOS
                         </h1>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 20px">
-                    <div class="col-md-4">
-                    </div>
-                    <div class="col-md-4">
-                        <div style="background-color: #FFFFFF; border-radius: 10px; padding: 15px ">
-                            <div class="row" style="margin-top: 30px">
-                                <div class="col-md-12" style="text-align: center; padding: 0px 30px">
+                        <div style="background-color: #FFFFFF; border-radius: 10px; padding: 15px;">
+                            <div class="row" style="margin-top: 30px;">
+                                <div class="col-md-12" style="text-align: center; padding: 0px 30px;">
                                     <div>
-                                        <img src="img/confirmacion.png" style="height: 110px" />
+                                        <img src="img/confirmacion.png" style="height: 110px;" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" style="margin-top: 30px">
-                                <div class="col-md-12" style="text-align: center; padding: 0px 30px">
-                                    <p style="color: #23952E; text-align: center; font-weight: 600; font-size: 20px; margin-bottom: 0px">
+                            <div class="row" style="margin-top: 30px;">
+                                <div class="col-md-12" style="text-align: center; padding: 0px 30px;">
+                                    <p style="color: #23952E; text-align: center; font-weight: 600; font-size: 20px; margin-bottom: 0px;">
                                         Redireccionando…
                                     </p>
                                     <p style="color: #4E4E4E; text-align: center;">
-                                        Si no podés acceder a los cursos, hacé click <a href='https://www.capacitacionesprome.com.ar/'>acá</a>.
+                                        Si no podés acceder a los cursos, hacé click <a href="https://www.capacitacionesprome.com.ar/" target="_blank">acá</a>.
                                     </p>
-
                                 </div>
                             </div>
                         </div>
