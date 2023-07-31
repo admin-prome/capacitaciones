@@ -52,7 +52,9 @@
         // });
         $(document).ready(function() {
             setTimeout(function() {
-                document.getElementById('Cursos').contentWindow.document.getElementById('link').click();
+                $('#Cursos').load(function() {
+                    document.getElementById('link').click()
+                });
             }, 2000);
         });
     </script>
