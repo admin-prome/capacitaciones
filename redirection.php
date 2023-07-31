@@ -50,11 +50,17 @@
         //         document.getElementById('link').click();
         //     }, 2000);
         // });
+        // $(document).ready(function() {
+        //     setTimeout(function() {
+        //         $('#Cursos').load(function() {
+        //             document.getElementById('link').click()
+        //         });
+        //     }, 2000);
+        // });
         $(document).ready(function() {
-            setTimeout(function() {
-                $('#Cursos').load(function() {
-                    document.getElementById('link').click()
-                });
+            window.setTimeout(function() {
+                var link = document.getElementById("link").href;
+                var newTab = window.open(link, '_blank');
             }, 2000);
         });
     </script>
