@@ -138,7 +138,6 @@
         function cleanDNIInput() {
             var dniInput = document.getElementById('dni');
             dniInput.value = dniInput.value.replace(/[.-]/g, '');
-            console.log(dniInput.value);
         }
     </script>
 
