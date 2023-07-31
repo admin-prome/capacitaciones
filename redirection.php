@@ -34,7 +34,7 @@
                                 Redireccionando…
                             </p>
                             <p style="color: #4E4E4E; text-align: center;">
-                                Si no podés acceder a los cursos, hacé click <a href="https://www.capacitacionesprome.com.ar/" id="link">acá</a>.
+                                Si no podés acceder a los cursos, hacé click <a href="https://www.capacitacionesprome.com.ar/" target="_blank" id="link">acá</a>.
                             </p>
                         </div>
                     </div>
@@ -45,18 +45,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript">
-        // $(document).ready(function() {
-        //     setTimeout(function() {
-        //         document.getElementById('link').click();
-        //     }, 2000);
-        // });
-        // $(document).ready(function() {
-        //     setTimeout(function() {
-        //         $('#Cursos').load(function() {
-        //             document.getElementById('link').click()
-        //         });
-        //     }, 2000);
-        // });
         $(document).ready(function() {
             window.setTimeout(function() {
                 var link = document.getElementById("link").href;
